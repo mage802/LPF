@@ -1,0 +1,14 @@
+{
+  "run_dir": "/root/autodl-tmp/campus_week8_9_starter/saves/week8/lpf_sparse_seed20250724",
+  "hysteresis_enabled": false,
+  "n_rounds": 86,
+  "replay_active_rounds": 78,
+  "capped_rounds": 0,
+  "replay_tokens_total": 265908,
+  "replay_fraction": 0.17727318182121213,
+  "max_replay_fraction": null,
+  "transitions": [],
+  "manifest_transitions": [],
+  "violations": [],
+  "pass": true
+}

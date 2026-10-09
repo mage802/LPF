@@ -1,0 +1,1 @@
+/root/autodl-tmp/campus_project/.venv/bin/python /root/autodl-tmp/campus_project/code_adapted/week10_11/scripts/train_lpf_v2.py --config /root/autodl-tmp/campus_week10_11_starter/configs/week11_safe_curriculum.yaml --seed 20250727 --output-dir /root/autodl-tmp/campus_project/runs/week11/safe_fallback_seed20250727

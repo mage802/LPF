@@ -1,0 +1,12 @@
+{
+  "schema_version": "eval_manifest_reconstructed_v1",
+  "reconstructed_in": "week10_audit",
+  "reconstructed_at": "2026-09-21 21:57:41",
+  "run_dir": "/root/autodl-tmp/campus_week8_9_starter/saves/week8/random_sameloop_seed20250724",
+  "note": "original eval_manifest.json was not produced by the week8/9 eval pipeline; reconstructed for audit completeness",
+  "artifacts": {
+    "eval_results.json": "e7dc64031830b847eb4120c9269c0c0a3a61b94b660b7e0da57748e3c0c98df8",
+    "samples_gsm8k_2026-08-15T00-11-27.659641.jsonl": "198c430fc8072eb3b299069f3fac843cb85c66decd4c8b3d44e900b05d54d499",
+    "samples_ifeval_2026-08-15T00-11-27.659641.jsonl": "e984d0ed91e41386fd1581e9da44a043a2f8130457323dc4e543b0317658a9f1"
+  }
+}

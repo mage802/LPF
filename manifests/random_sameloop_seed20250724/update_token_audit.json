@@ -1,0 +1,13 @@
+{
+  "run_dir": "/root/autodl-tmp/campus_week8_9_starter/saves/week8/random_sameloop_seed20250724",
+  "n_updates": 815,
+  "n_partial": 1,
+  "update_token_target": 2048,
+  "update_token_tolerance": 0.2,
+  "ratio_min": 0.18212890625,
+  "ratio_max": 1.19921875,
+  "final_cumulative_tokens": 1499971,
+  "budget_utilization": 0.9999806666666666,
+  "violations": [],
+  "pass": true
+}

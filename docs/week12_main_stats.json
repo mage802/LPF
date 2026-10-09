@@ -1,0 +1,121 @@
+{
+  "per_seed": {
+    "lp_match_replay": {
+      "strict_runs": [
+        0.2472,
+        0.213,
+        0.2654
+      ],
+      "strict_mean": 0.2418,
+      "strict_sd": 0.0266,
+      "flex_mean": 0.2418,
+      "flex_sd": 0.0258,
+      "n": 3
+    },
+    "lp_only_replay": {
+      "strict_runs": [
+        0.3192,
+        0.2752,
+        0.2183
+      ],
+      "strict_mean": 0.2709,
+      "strict_sd": 0.0506,
+      "flex_mean": 0.2707,
+      "flex_sd": 0.0502,
+      "n": 3
+    },
+    "lpf_sparse": {
+      "strict_runs": [
+        0.2472,
+        0.2699,
+        0.2244
+      ],
+      "strict_mean": 0.2472,
+      "strict_sd": 0.0227,
+      "flex_mean": 0.2494,
+      "flex_sd": 0.0231,
+      "n": 3
+    },
+    "random_sameloop": {
+      "strict_runs": [
+        0.2638,
+        0.2805,
+        0.2904
+      ],
+      "strict_mean": 0.2782,
+      "strict_sd": 0.0134,
+      "flex_mean": 0.2798,
+      "flex_sd": 0.0127,
+      "n": 3
+    },
+    "safe_fallback": {
+      "strict_runs": [
+        0.2449,
+        0.2487,
+        0.2335
+      ],
+      "strict_mean": 0.2424,
+      "strict_sd": 0.0079,
+      "flex_mean": 0.2143,
+      "flex_sd": 0.0374,
+      "n": 3
+    }
+  },
+  "registered": {
+    "safe_fallback_minus_random_sameloop": {
+      "A": "safe_fallback",
+      "B": 10000,
+      "point_pp": -3.589,
+      "ci_lo_pp": -5.231,
+      "ci_hi_pp": -1.946,
+      "unit": "example_level_shared_doc_resampling",
+      "rng": "numpy.default_rng(20250722)",
+      "role": "primary_preregistered",
+      "noninferiority_rule": "pass iff point>=-1.00pp and ci_lo>=-2.50pp",
+      "verdict": false
+    },
+    "lp_match_replay_minus_random_sameloop": {
+      "A": "lp_match_replay",
+      "B": 10000,
+      "point_pp": -3.639,
+      "ci_lo_pp": -5.155,
+      "ci_hi_pp": -2.098,
+      "unit": "example_level_shared_doc_resampling",
+      "rng": "numpy.default_rng(20250722)",
+      "role": "reproduction_of_registered"
+    },
+    "safe_fallback_minus_lp_match_replay": {
+      "A": "safe_fallback",
+      "B": 10000,
+      "point_pp": 0.051,
+      "ci_lo_pp": -1.516,
+      "ci_hi_pp": 1.592,
+      "unit": "example_level_shared_doc_resampling",
+      "rng": "numpy.default_rng(20250722)",
+      "role": "secondary_not_equivalence"
+    },
+    "safe_fallback_minus_lp_only_replay": {
+      "A": "safe_fallback",
+      "B": 10000,
+      "point_pp": -2.856,
+      "ci_lo_pp": -4.423,
+      "ci_hi_pp": -1.264,
+      "unit": "example_level_shared_doc_resampling",
+      "rng": "numpy.default_rng(20250722)",
+      "role": "exploratory_vs_actual_parent"
+    }
+  },
+  "sensitivity_post_hoc": {
+    "comparison": "safe_minus_random",
+    "post_hoc": true,
+    "point_pp": -3.564,
+    "ci_lo_pp": -6.065,
+    "ci_hi_pp": -1.011,
+    "algorithm": "resample 3 run indices within each group independently + shared doc indices",
+    "rng": "numpy.default_rng(20250723)",
+    "B": 10000,
+    "conditionality": "conditional on frozen reference and the 3+3 trained runs; not algorithm-level coverage"
+  },
+  "input_file": "/root/autodl-tmp/week12_results_20260922_033907/sample_checks/normalized_gsm8k.jsonl",
+  "note": "primary verdict uses registered margins; sensitivity is post-hoc and reported side-by-side, not a replacement"
+}

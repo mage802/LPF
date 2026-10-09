@@ -1,0 +1,12 @@
+{
+  "schema_version": "eval_manifest_reconstructed_v1",
+  "reconstructed_in": "week10_audit",
+  "reconstructed_at": "2026-09-21 21:57:43",
+  "run_dir": "/root/autodl-tmp/campus_week8_9_starter/saves/week8/lpf_sparse_seed20250722",
+  "note": "original eval_manifest.json was not produced by the week8/9 eval pipeline; reconstructed for audit completeness",
+  "artifacts": {
+    "eval_results.json": "0ea23961287679e12054874791c1be3c84ad1784c6d096b3b2fb5db0dce61795",
+    "samples_gsm8k_2026-08-15T02-21-08.658473.jsonl": "7c30fe01993fe0d5cbd2646fafc1b52180b3a14c96203a233f59a2ba7d491cdd",
+    "samples_ifeval_2026-08-15T02-21-08.658473.jsonl": "a81fc24261668ba4e844015d4d6b4c0ae133857a7cb047aadc86309939d7bd71"
+  }
+}

@@ -1,0 +1,718 @@
+{
+  "seed25": {
+    "n_rounds": 82,
+    "fallback_true": 11,
+    "fallback_fraction": 0.1341,
+    "fallback_while_active_nonempty": 0,
+    "selected_outside_active_when_not_fallback": 3,
+    "eligible_med": 5,
+    "active_med": 5,
+    "active_min": 0,
+    "active_max": 16,
+    "rounds_zero_active": 11,
+    "skills_without_probe": [
+      "math.algebra"
+    ],
+    "per_skill": {
+      "code.algorithms": {
+        "pass%": 65.9,
+        "qual%": 65.9,
+        "active%": 57.3,
+        "lp_mean": -0.0225,
+        "lp_min": -0.2365,
+        "lp_max": 0.104,
+        "lower_bound": -0.04123612041317415
+      },
+      "code.data_structures": {
+        "pass%": 51.2,
+        "qual%": 51.2,
+        "active%": 45.1,
+        "lp_mean": 0.002,
+        "lp_min": -0.2478,
+        "lp_max": 0.1283,
+        "lower_bound": -0.0021425716182906524
+      },
+      "code.debug_testing": {
+        "pass%": 84.1,
+        "qual%": 84.1,
+        "active%": 79.3,
+        "lp_mean": -0.0048,
+        "lp_min": -0.1402,
+        "lp_max": 0.0665,
+        "lower_bound": -0.03442561754539533
+      },
+      "code.general_programming": {
+        "pass%": 15.9,
+        "qual%": 15.9,
+        "active%": 13.4,
+        "lp_mean": 0.014,
+        "lp_min": -0.1111,
+        "lp_max": 0.1579,
+        "lower_bound": 0.05685218533417803
+      },
+      "code.io_files": {
+        "pass%": 14.6,
+        "qual%": 13.4,
+        "active%": 11.0,
+        "lp_mean": 0.0538,
+        "lp_min": -0.0875,
+        "lp_max": 0.2737,
+        "lower_bound": 0.1498613989395197
+      },
+      "code.web_frontend": {
+        "pass%": 18.3,
+        "qual%": 18.3,
+        "active%": 15.9,
+        "lp_mean": 0.0105,
+        "lp_min": -0.0532,
+        "lp_max": 0.1092,
+        "lower_bound": 0.04232258368829381
+      },
+      "general.classification": {
+        "pass%": 52.4,
+        "qual%": 52.4,
+        "active%": 46.3,
+        "lp_mean": 0.0015,
+        "lp_min": -0.1205,
+        "lp_max": 0.086,
+        "lower_bound": 0.006834557962305426
+      },
+      "general.explanation": {
+        "pass%": 30.5,
+        "qual%": 30.5,
+        "active%": 26.8,
+        "lp_mean": 0.0071,
+        "lp_min": -0.1677,
+        "lp_max": 0.1099,
+        "lower_bound": 0.018544089284015065
+      },
+      "general.extraction": {
+        "pass%": 51.2,
+        "qual%": 51.2,
+        "active%": 46.3,
+        "lp_mean": 0.0074,
+        "lp_min": -0.1382,
+        "lp_max": 0.0685,
+        "lower_bound": 0.02399285254611344
+      },
+      "general.question_answering": {
+        "pass%": 31.7,
+        "qual%": 31.7,
+        "active%": 26.8,
+        "lp_mean": 0.0123,
+        "lp_min": -0.2199,
+        "lp_max": 0.1283,
+        "lower_bound": 0.028579480934745015
+      },
+      "general.summarization": {
+        "pass%": 43.9,
+        "qual%": 43.9,
+        "active%": 37.8,
+        "lp_mean": 0.0145,
+        "lp_min": -0.3069,
+        "lp_max": 0.1669,
+        "lower_bound": 0.04811327350250076
+      },
+      "general.writing_generation": {
+        "pass%": 65.9,
+        "qual%": 65.9,
+        "active%": 58.5,
+        "lp_mean": 0.0021,
+        "lp_min": -0.1872,
+        "lp_max": 0.051,
+        "lower_bound": 0.0016325284837020626
+      },
+      "math.algebra": {
+        "pass%": 0.0,
+        "qual%": 0.0,
+        "active%": 0.0,
+        "lp_mean": null,
+        "lp_min": null,
+        "lp_max": null,
+        "lower_bound": null
+      },
+      "math.counting_geometry": {
+        "pass%": 8.5,
+        "qual%": 8.5,
+        "active%": 7.3,
+        "lp_mean": 0.0506,
+        "lp_min": -0.0718,
+        "lp_max": 0.2405,
+        "lower_bound": 0.14187052225428895
+      },
+      "math.general_reasoning": {
+        "pass%": 9.8,
+        "qual%": 9.8,
+        "active%": 7.3,
+        "lp_mean": 0.025,
+        "lp_min": -0.1013,
+        "lp_max": 0.1538,
+        "lower_bound": 0.07049055794920993
+      },
+      "math.money": {
+        "pass%": 6.1,
+        "qual%": 6.1,
+        "active%": 3.7,
+        "lp_mean": 0.0295,
+        "lp_min": -0.0619,
+        "lp_max": 0.1245,
+        "lower_bound": 0.08713863709018987
+      },
+      "math.rate_time": {
+        "pass%": 7.3,
+        "qual%": 7.3,
+        "active%": 3.7,
+        "lp_mean": 0.0272,
+        "lp_min": -0.0607,
+        "lp_max": 0.137,
+        "lower_bound": 0.07888793466492444
+      },
+      "math.ratio_percent": {
+        "pass%": 4.9,
+        "qual%": 4.9,
+        "active%": 2.4,
+        "lp_mean": 0.029,
+        "lp_min": -0.0542,
+        "lp_max": 0.1406,
+        "lower_bound": 0.08922696596880861
+      }
+    }
+  },
+  "seed26": {
+    "n_rounds": 82,
+    "fallback_true": 6,
+    "fallback_fraction": 0.0732,
+    "fallback_while_active_nonempty": 0,
+    "selected_outside_active_when_not_fallback": 4,
+    "eligible_med": 6,
+    "active_med": 5,
+    "active_min": 0,
+    "active_max": 14,
+    "rounds_zero_active": 6,
+    "skills_without_probe": [
+      "math.algebra"
+    ],
+    "per_skill": {
+      "code.algorithms": {
+        "pass%": 84.1,
+        "qual%": 82.9,
+        "active%": 79.3,
+        "lp_mean": -0.0019,
+        "lp_min": -0.2031,
+        "lp_max": 0.1145,
+        "lower_bound": -0.04123612041317415
+      },
+      "code.data_structures": {
+        "pass%": 72.0,
+        "qual%": 72.0,
+        "active%": 68.3,
+        "lp_mean": 0.0105,
+        "lp_min": -0.249,
+        "lp_max": 0.1917,
+        "lower_bound": -0.0021425716182906524
+      },
+      "code.debug_testing": {
+        "pass%": 79.3,
+        "qual%": 79.3,
+        "active%": 76.8,
+        "lp_mean": -0.0034,
+        "lp_min": -0.1083,
+        "lp_max": 0.0863,
+        "lower_bound": -0.03442561754539533
+      },
+      "code.general_programming": {
+        "pass%": 23.2,
+        "qual%": 23.2,
+        "active%": 20.7,
+        "lp_mean": 0.0278,
+        "lp_min": -0.0463,
+        "lp_max": 0.1793,
+        "lower_bound": 0.05685218533417803
+      },
+      "code.io_files": {
+        "pass%": 8.5,
+        "qual%": 7.3,
+        "active%": 4.9,
+        "lp_mean": 0.0468,
+        "lp_min": -0.039,
+        "lp_max": 0.3408,
+        "lower_bound": 0.1498613989395197
+      },
+      "code.web_frontend": {
+        "pass%": 17.1,
+        "qual%": 17.1,
+        "active%": 14.6,
+        "lp_mean": 0.0124,
+        "lp_min": -0.0436,
+        "lp_max": 0.1172,
+        "lower_bound": 0.04232258368829381
+      },
+      "general.classification": {
+        "pass%": 48.8,
+        "qual%": 47.6,
+        "active%": 37.8,
+        "lp_mean": 0.0103,
+        "lp_min": -0.0746,
+        "lp_max": 0.0918,
+        "lower_bound": 0.006834557962305426
+      },
+      "general.explanation": {
+        "pass%": 54.9,
+        "qual%": 53.7,
+        "active%": 46.3,
+        "lp_mean": 0.0095,
+        "lp_min": -0.1446,
+        "lp_max": 0.0743,
+        "lower_bound": 0.018544089284015065
+      },
+      "general.extraction": {
+        "pass%": 36.6,
+        "qual%": 36.6,
+        "active%": 30.5,
+        "lp_mean": 0.0055,
+        "lp_min": -0.168,
+        "lp_max": 0.1028,
+        "lower_bound": 0.02399285254611344
+      },
+      "general.question_answering": {
+        "pass%": 40.2,
+        "qual%": 40.2,
+        "active%": 31.7,
+        "lp_mean": 0.0123,
+        "lp_min": -0.1864,
+        "lp_max": 0.1004,
+        "lower_bound": 0.028579480934745015
+      },
+      "general.summarization": {
+        "pass%": 35.4,
+        "qual%": 35.4,
+        "active%": 28.0,
+        "lp_mean": 0.0261,
+        "lp_min": -0.1519,
+        "lp_max": 0.1275,
+        "lower_bound": 0.04811327350250076
+      },
+      "general.writing_generation": {
+        "pass%": 63.4,
+        "qual%": 62.2,
+        "active%": 54.9,
+        "lp_mean": 0.0029,
+        "lp_min": -0.1643,
+        "lp_max": 0.0724,
+        "lower_bound": 0.0016325284837020626
+      },
+      "math.algebra": {
+        "pass%": 0.0,
+        "qual%": 0.0,
+        "active%": 0.0,
+        "lp_mean": null,
+        "lp_min": null,
+        "lp_max": null,
+        "lower_bound": null
+      },
+      "math.counting_geometry": {
+        "pass%": 8.5,
+        "qual%": 8.5,
+        "active%": 7.3,
+        "lp_mean": 0.0486,
+        "lp_min": -0.0015,
+        "lp_max": 0.2371,
+        "lower_bound": 0.14187052225428895
+      },
+      "math.general_reasoning": {
+        "pass%": 17.1,
+        "qual%": 17.1,
+        "active%": 14.6,
+        "lp_mean": 0.0292,
+        "lp_min": -0.1316,
+        "lp_max": 0.1237,
+        "lower_bound": 0.07049055794920993
+      },
+      "math.money": {
+        "pass%": 13.4,
+        "qual%": 13.4,
+        "active%": 11.0,
+        "lp_mean": 0.0323,
+        "lp_min": -0.1248,
+        "lp_max": 0.1419,
+        "lower_bound": 0.08713863709018987
+      },
+      "math.rate_time": {
+        "pass%": 13.4,
+        "qual%": 13.4,
+        "active%": 11.0,
+        "lp_mean": 0.0302,
+        "lp_min": -0.0509,
+        "lp_max": 0.1362,
+        "lower_bound": 0.07888793466492444
+      },
+      "math.ratio_percent": {
+        "pass%": 11.0,
+        "qual%": 11.0,
+        "active%": 8.5,
+        "lp_mean": 0.0337,
+        "lp_min": -0.089,
+        "lp_max": 0.1625,
+        "lower_bound": 0.08922696596880861
+      }
+    }
+  },
+  "seed27": {
+    "n_rounds": 81,
+    "fallback_true": 5,
+    "fallback_fraction": 0.0617,
+    "fallback_while_active_nonempty": 0,
+    "selected_outside_active_when_not_fallback": 2,
+    "eligible_med": 6,
+    "active_med": 5,
+    "active_min": 0,
+    "active_max": 12,
+    "rounds_zero_active": 5,
+    "skills_without_probe": [
+      "math.algebra"
+    ],
+    "per_skill": {
+      "code.algorithms": {
+        "pass%": 86.4,
+        "qual%": 86.4,
+        "active%": 81.5,
+        "lp_mean": -0.0108,
+        "lp_min": -0.1708,
+        "lp_max": 0.0445,
+        "lower_bound": -0.04123612041317415
+      },
+      "code.data_structures": {
+        "pass%": 64.2,
+        "qual%": 64.2,
+        "active%": 58.0,
+        "lp_mean": 0.0107,
+        "lp_min": -0.1106,
+        "lp_max": 0.148,
+        "lower_bound": -0.0021425716182906524
+      },
+      "code.debug_testing": {
+        "pass%": 82.7,
+        "qual%": 82.7,
+        "active%": 80.2,
+        "lp_mean": -0.0073,
+        "lp_min": -0.0974,
+        "lp_max": 0.0723,
+        "lower_bound": -0.03442561754539533
+      },
+      "code.general_programming": {
+        "pass%": 17.3,
+        "qual%": 17.3,
+        "active%": 16.0,
+        "lp_mean": 0.0169,
+        "lp_min": -0.0648,
+        "lp_max": 0.1738,
+        "lower_bound": 0.05685218533417803
+      },
+      "code.io_files": {
+        "pass%": 9.9,
+        "qual%": 7.4,
+        "active%": 4.9,
+        "lp_mean": 0.047,
+        "lp_min": -0.0117,
+        "lp_max": 0.2614,
+        "lower_bound": 0.1498613989395197
+      },
+      "code.web_frontend": {
+        "pass%": 14.8,
+        "qual%": 13.6,
+        "active%": 11.1,
+        "lp_mean": 0.0063,
+        "lp_min": -0.0408,
+        "lp_max": 0.1177,
+        "lower_bound": 0.04232258368829381
+      },
+      "general.classification": {
+        "pass%": 32.1,
+        "qual%": 32.1,
+        "active%": 27.2,
+        "lp_mean": -0.0477,
+        "lp_min": -0.3501,
+        "lp_max": 0.0986,
+        "lower_bound": 0.006834557962305426
+      },
+      "general.explanation": {
+        "pass%": 51.9,
+        "qual%": 48.1,
+        "active%": 40.7,
+        "lp_mean": -0.0041,
+        "lp_min": -0.221,
+        "lp_max": 0.1296,
+        "lower_bound": 0.018544089284015065
+      },
+      "general.extraction": {
+        "pass%": 23.5,
+        "qual%": 23.5,
+        "active%": 18.5,
+        "lp_mean": 0.0003,
+        "lp_min": -0.1106,
+        "lp_max": 0.0735,
+        "lower_bound": 0.02399285254611344
+      },
+      "general.question_answering": {
+        "pass%": 45.7,
+        "qual%": 44.4,
+        "active%": 37.0,
+        "lp_mean": -0.009,
+        "lp_min": -0.2201,
+        "lp_max": 0.1031,
+        "lower_bound": 0.028579480934745015
+      },
+      "general.summarization": {
+        "pass%": 33.3,
+        "qual%": 33.3,
+        "active%": 27.2,
+        "lp_mean": -0.008,
+        "lp_min": -0.3764,
+        "lp_max": 0.1887,
+        "lower_bound": 0.04811327350250076
+      },
+      "general.writing_generation": {
+        "pass%": 58.0,
+        "qual%": 58.0,
+        "active%": 54.3,
+        "lp_mean": -0.0091,
+        "lp_min": -0.2019,
+        "lp_max": 0.1113,
+        "lower_bound": 0.0016325284837020626
+      },
+      "math.algebra": {
+        "pass%": 0.0,
+        "qual%": 0.0,
+        "active%": 0.0,
+        "lp_mean": null,
+        "lp_min": null,
+        "lp_max": null,
+        "lower_bound": null
+      },
+      "math.counting_geometry": {
+        "pass%": 0.0,
+        "qual%": 0.0,
+        "active%": 0.0,
+        "lp_mean": 0.0449,
+        "lp_min": -0.0213,
+        "lp_max": 0.1204,
+        "lower_bound": 0.14187052225428895
+      },
+      "math.general_reasoning": {
+        "pass%": 12.3,
+        "qual%": 12.3,
+        "active%": 11.1,
+        "lp_mean": 0.0244,
+        "lp_min": -0.0608,
+        "lp_max": 0.1237,
+        "lower_bound": 0.07049055794920993
+      },
+      "math.money": {
+        "pass%": 13.6,
+        "qual%": 13.6,
+        "active%": 12.3,
+        "lp_mean": 0.0253,
+        "lp_min": -0.0917,
+        "lp_max": 0.1543,
+        "lower_bound": 0.08713863709018987
+      },
+      "math.rate_time": {
+        "pass%": 12.3,
+        "qual%": 12.3,
+        "active%": 11.1,
+        "lp_mean": 0.0259,
+        "lp_min": -0.0712,
+        "lp_max": 0.1446,
+        "lower_bound": 0.07888793466492444
+      },
+      "math.ratio_percent": {
+        "pass%": 11.1,
+        "qual%": 11.1,
+        "active%": 9.9,
+        "lp_mean": 0.0277,
+        "lp_min": -0.0486,
+        "lp_max": 0.1338,
+        "lower_bound": 0.08922696596880861
+      }
+    }
+  },
+  "smoke": {
+    "n_rounds": 12,
+    "fallback_true": 3,
+    "fallback_fraction": 0.25,
+    "fallback_while_active_nonempty": 0,
+    "selected_outside_active_when_not_fallback": 0,
+    "eligible_med": 8,
+    "active_med": 7,
+    "active_min": 0,
+    "active_max": 12,
+    "rounds_zero_active": 3,
+    "skills_without_probe": [
+      "math.algebra"
+    ],
+    "per_skill": {
+      "code.algorithms": {
+        "pass%": 66.7,
+        "qual%": 66.7,
+        "active%": 58.3,
+        "lp_mean": -0.041,
+        "lp_min": -0.1183,
+        "lp_max": 0.0151,
+        "lower_bound": -0.04123612041317415
+      },
+      "code.data_structures": {
+        "pass%": 75.0,
+        "qual%": 75.0,
+        "active%": 66.7,
+        "lp_mean": 0.0364,
+        "lp_min": -0.1035,
+        "lp_max": 0.1282,
+        "lower_bound": -0.0021425716182906524
+      },
+      "code.debug_testing": {
+        "pass%": 83.3,
+        "qual%": 83.3,
+        "active%": 75.0,
+        "lp_mean": 0.0158,
+        "lp_min": -0.0414,
+        "lp_max": 0.0632,
+        "lower_bound": -0.03442561754539533
+      },
+      "code.general_programming": {
+        "pass%": 75.0,
+        "qual%": 75.0,
+        "active%": 66.7,
+        "lp_mean": 0.1046,
+        "lp_min": 0.0,
+        "lp_max": 0.1634,
+        "lower_bound": 0.05685218533417803
+      },
+      "code.io_files": {
+        "pass%": 75.0,
+        "qual%": 75.0,
+        "active%": 66.7,
+        "lp_mean": 0.1813,
+        "lp_min": 0.0,
+        "lp_max": 0.2704,
+        "lower_bound": 0.1498613989395197
+      },
+      "code.web_frontend": {
+        "pass%": 58.3,
+        "qual%": 58.3,
+        "active%": 50.0,
+        "lp_mean": 0.0555,
+        "lp_min": -0.0024,
+        "lp_max": 0.1041,
+        "lower_bound": 0.04232258368829381
+      },
+      "general.classification": {
+        "pass%": 75.0,
+        "qual%": 75.0,
+        "active%": 66.7,
+        "lp_mean": 0.0516,
+        "lp_min": -0.0047,
+        "lp_max": 0.0924,
+        "lower_bound": 0.006834557962305426
+      },
+      "general.explanation": {
+        "pass%": 16.7,
+        "qual%": 16.7,
+        "active%": 8.3,
+        "lp_mean": -0.0155,
+        "lp_min": -0.0754,
+        "lp_max": 0.0409,
+        "lower_bound": 0.018544089284015065
+      },
+      "general.extraction": {
+        "pass%": 41.7,
+        "qual%": 41.7,
+        "active%": 33.3,
+        "lp_mean": 0.0089,
+        "lp_min": -0.0517,
+        "lp_max": 0.0646,
+        "lower_bound": 0.02399285254611344
+      },
+      "general.question_answering": {
+        "pass%": 25.0,
+        "qual%": 25.0,
+        "active%": 16.7,
+        "lp_mean": -0.0138,
+        "lp_min": -0.1089,
+        "lp_max": 0.0706,
+        "lower_bound": 0.028579480934745015
+      },
+      "general.summarization": {
+        "pass%": 50.0,
+        "qual%": 50.0,
+        "active%": 41.7,
+        "lp_mean": 0.0265,
+        "lp_min": -0.0753,
+        "lp_max": 0.1251,
+        "lower_bound": 0.04811327350250076
+      },
+      "general.writing_generation": {
+        "pass%": 25.0,
+        "qual%": 25.0,
+        "active%": 16.7,
+        "lp_mean": -0.0217,
+        "lp_min": -0.1025,
+        "lp_max": 0.0418,
+        "lower_bound": 0.0016325284837020626
+      },
+      "math.algebra": {
+        "pass%": 0.0,
+        "qual%": 0.0,
+        "active%": 0.0,
+        "lp_mean": null,
+        "lp_min": null,
+        "lp_max": null,
+        "lower_bound": null
+      },
+      "math.counting_geometry": {
+        "pass%": 0.0,
+        "qual%": 0.0,
+        "active%": 0.0,
+        "lp_mean": 0.0814,
+        "lp_min": 0.0,
+        "lp_max": 0.1291,
+        "lower_bound": 0.14187052225428895
+      },
+      "math.general_reasoning": {
+        "pass%": 0.0,
+        "qual%": 0.0,
+        "active%": 0.0,
+        "lp_mean": 0.0073,
+        "lp_min": -0.0459,
+        "lp_max": 0.0488,
+        "lower_bound": 0.07049055794920993
+      },
+      "math.money": {
+        "pass%": 0.0,
+        "qual%": 0.0,
+        "active%": 0.0,
+        "lp_mean": 0.0056,
+        "lp_min": -0.0507,
+        "lp_max": 0.0445,
+        "lower_bound": 0.08713863709018987
+      },
+      "math.rate_time": {
+        "pass%": 0.0,
+        "qual%": 0.0,
+        "active%": 0.0,
+        "lp_mean": 0.0227,
+        "lp_min": -0.0306,
+        "lp_max": 0.0589,
+        "lower_bound": 0.07888793466492444
+      },
+      "math.ratio_percent": {
+        "pass%": 0.0,
+        "qual%": 0.0,
+        "active%": 0.0,
+        "lp_mean": 0.0281,
+        "lp_min": -0.0302,
+        "lp_max": 0.0702,
+        "lower_bound": 0.08922696596880861
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "run_dir": "/root/autodl-tmp/campus_week8_9_starter/saves/week8/random_sameloop_seed20250723",
+  "hysteresis_enabled": false,
+  "n_rounds": 83,
+  "replay_active_rounds": 75,
+  "capped_rounds": 0,
+  "replay_tokens_total": 257354,
+  "replay_fraction": 0.17157162095494607,
+  "max_replay_fraction": null,
+  "transitions": [],
+  "manifest_transitions": [],
+  "violations": [],
+  "pass": true
+}

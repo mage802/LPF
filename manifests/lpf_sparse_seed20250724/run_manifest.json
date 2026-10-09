@@ -1,0 +1,282 @@
+{
+  "created_at_utc": "2026-08-14T14:52:20.498416+00:00",
+  "algorithm": "LPF-Curriculum",
+  "protocol_family": "token_update_matched_v2",
+  "hyperparameter_provenance": "arbitrary_but_frozen",
+  "config": {
+    "competence_margin": 0.15,
+    "coverage_guard_enabled": false,
+    "difficulty_match_weight": 0.5,
+    "ema_fast_decay": 0.5,
+    "ema_slow_decay": 0.9,
+    "epsilon_exploration": 0.05,
+    "forgetting_weight": 0.75,
+    "gradient_accumulation_steps": 8,
+    "gradient_candidate_top_k": 5,
+    "gradient_checkpointing": true,
+    "gradient_conflict_enabled": false,
+    "gradient_conflict_weight": 0.5,
+    "gradient_coords_per_tensor": 32,
+    "gradient_examples_per_skill": 2,
+    "gradient_interval_rounds": 4,
+    "gradient_reference_ema": 0.9,
+    "gradient_sketch_dim": 1024,
+    "hyperparameter_provenance": "arbitrary_but_frozen",
+    "learning_progress_weight": 1.0,
+    "learning_rate": 0.0002,
+    "lora_alpha": 32,
+    "lora_dropout": 0.05,
+    "lora_rank": 16,
+    "lora_target": "all-linear",
+    "lr_schedule": "token_progress_cosine",
+    "lr_scheduler_estimate_method": "1500000/2479(Week4-5六次实测)≈605→600; 衰减已改token进度(errata-2), 600仅作warmup参考",
+    "lr_scheduler_total_steps": 600,
+    "max_grad_norm": 1.0,
+    "max_length": 1024,
+    "max_optimizer_steps": 1000,
+    "max_optimizer_steps_role": "safety_cap_only_NOT_stopper",
+    "micro_batch_size": 2,
+    "model_name_or_path": "Qwen/Qwen2.5-0.5B-Instruct",
+    "model_revision": "main",
+    "output_dir": "saves/week8/lpf_sparse_seed20250724",
+    "probe_batch_size": 4,
+    "probe_interval_rounds": 4,
+    "protocol_family": "token_update_matched_v2",
+    "replay_enabled": true,
+    "replay_forgetting_threshold": 0.03,
+    "replay_hysteresis_enabled": false,
+    "replay_ratio": 0.2,
+    "save_every_rounds": 10,
+    "seed": 20250724,
+    "selector_mode": "lpf",
+    "selector_probe_file": "../campus_week2_3_starter/data/week3/probes/selector_probe.jsonl",
+    "staleness_weight": 0.15,
+    "steps_per_round": 10,
+    "strict_token_budget": true,
+    "target_full_tokens": 1500000,
+    "token_budget": 1500000,
+    "token_budget_definition": "sum(total_tokens_after_template_and_truncation)",
+    "token_checkpoint_marks": [
+      250000,
+      500000,
+      750000,
+      1000000,
+      1250000,
+      1500000
+    ],
+    "token_normalized_gradient": true,
+    "token_progress_cosine": true,
+    "train_file": "../campus_week4_5_starter/data/week4/train_skill_buckets.jsonl",
+    "update_token_target": 2048,
+    "update_token_tolerance": 0.2,
+    "warmup_ratio": 0.03,
+    "weight_decay": 0.0
+  },
+  "config_sha256": "ac783ee44a20fed7b04006b762e6ebf649d91c8839896835bd5eb5daddce779e",
+  "train_sha256": "0896b165a795c52549e2cfe6f9462a3f0417e242fb319ae3c0ad535f177d287e",
+  "selector_probe_sha256": "8f98e283892d0626b0162165c72dd963e1888cd86b67cc8097d013815ec735b5",
+  "leakage_check_train_x_probe": 0,
+  "arms_without_probe_coverage": [
+    "math.algebra"
+  ],
+  "model_revision_loaded": "7ae557604adf67be50417f59c2c2f167def9a775",
+  "device": "cuda",
+  "dtype": "torch.bfloat16",
+  "optimizer_steps": 851,
+  "rounds": 86,
+  "termination_reason": "token_budget_exact",
+  "trained_full_tokens": 1499990,
+  "trained_answer_tokens": 791931,
+  "target_full_tokens": 1500000,
+  "budget_utilization": 0.9999933333333333,
+  "overshoot_tokens": 0,
+  "partial_final_update": true,
+  "budget_stop_reason": "next_batch_would_overshoot",
+  "lr_schedule": "token_progress_cosine",
+  "lr_base": 0.0002,
+  "lr_warmup_tokens": 45000,
+  "lr_total_tokens": 1500000,
+  "update_token_target": 2048,
+  "update_token_tolerance": 0.2,
+  "token_normalized_gradient": true,
+  "update_token_stats": {
+    "n_updates": 851,
+    "mean": 1762.62044653349,
+    "std": 114.35709221911503,
+    "min": 47,
+    "max": 2317,
+    "n_partial": 6
+  },
+  "utility_forgetting_weight": 0.75,
+  "replay_forgetting_enabled": true,
+  "replay_hysteresis_enabled": false,
+  "replay_hysteresis_params": null,
+  "replay_tokens_total": 265908,
+  "replay_fraction": 0.17727318182121213,
+  "replay_hysteresis_transitions": [],
+  "coverage_guard_enabled": false,
+  "coverage_guard_params": {
+    "window_tokens": 250000,
+    "min_arm_exposure_fraction": 0.005,
+    "domain_deviation_tolerance": 0.1
+  },
+  "orig_domain_fraction": {
+    "code": 0.3314814814814815,
+    "general": 0.3360493827160494,
+    "math": 0.3324691358024691
+  },
+  "orig_domain_fraction_source": "precomputed_fields",
+  "domain_exposure_tokens": {
+    "code": 1459679,
+    "math": 40311
+  },
+  "final_domain_deviation": {
+    "code": 0.6416443393573241,
+    "general": -0.3360493827160494,
+    "math": -0.30559495664127473
+  },
+  "candidate_dead": false,
+  "selection_counts_by_arm": {
+    "code.algorithms::easy": 2,
+    "code.data_structures::easy": 2,
+    "code.debug_testing::easy": 7,
+    "code.general_programming::easy": 1,
+    "code.io_files::medium": 46,
+    "code.io_files::easy": 9,
+    "code.debug_testing::medium": 1,
+    "math.counting_geometry::easy": 3,
+    "code.io_files::hard": 15
+  },
+  "exposure_tokens_by_source": {
+    "code.algorithms::easy": 32664,
+    "code.data_structures::easy": 30650,
+    "code.debug_testing::easy": 90347,
+    "code.general_programming::easy": 18046,
+    "code.io_files::medium": 641596,
+    "code.io_files::easy": 149548,
+    "replay::code.algorithms": 45021,
+    "replay::code.debug_testing": 220887,
+    "code.debug_testing::medium": 15742,
+    "math.counting_geometry::easy": 40311,
+    "code.io_files::hard": 215178
+  },
+  "final_selector_probe_scores": {
+    "code.algorithms": {
+      "examples": 2,
+      "answer_tokens": 192,
+      "mean_nll": 1.0361005465189617,
+      "ppl": 2.8182060964498277
+    },
+    "code.data_structures": {
+      "examples": 8,
+      "answer_tokens": 370,
+      "mean_nll": 1.6044569943402265,
+      "ppl": 4.975157330542786
+    },
+    "code.debug_testing": {
+      "examples": 4,
+      "answer_tokens": 477,
+      "mean_nll": 1.0464659316984612,
+      "ppl": 2.8475698083411807
+    },
+    "code.general_programming": {
+      "examples": 8,
+      "answer_tokens": 261,
+      "mean_nll": 0.8203811353193846,
+      "ppl": 2.271365370145193
+    },
+    "code.io_files": {
+      "examples": 1,
+      "answer_tokens": 16,
+      "mean_nll": 0.26606035232543945,
+      "ppl": 1.3048138048580353
+    },
+    "code.web_frontend": {
+      "examples": 8,
+      "answer_tokens": 502,
+      "mean_nll": 0.6172279988627035,
+      "ppl": 1.8537822265980843
+    },
+    "general.classification": {
+      "examples": 3,
+      "answer_tokens": 139,
+      "mean_nll": 1.0233874286679054,
+      "ppl": 2.782604692141686
+    },
+    "general.explanation": {
+      "examples": 7,
+      "answer_tokens": 752,
+      "mean_nll": 3.1881337368741947,
+      "ppl": 24.243141117817316
+    },
+    "general.extraction": {
+      "examples": 7,
+      "answer_tokens": 223,
+      "mean_nll": 1.8121223962895003,
+      "ppl": 6.1234299953864975
+    },
+    "general.question_answering": {
+      "examples": 8,
+      "answer_tokens": 585,
+      "mean_nll": 3.193211198464418,
+      "ppl": 24.36654776680466
+    },
+    "general.summarization": {
+      "examples": 2,
+      "answer_tokens": 112,
+      "mean_nll": 2.5943611689976285,
+      "ppl": 13.388031939100863
+    },
+    "general.writing_generation": {
+      "examples": 7,
+      "answer_tokens": 871,
+      "mean_nll": 2.986035202455575,
+      "ppl": 19.806995877776465
+    },
+    "math.counting_geometry": {
+      "examples": 1,
+      "answer_tokens": 102,
+      "mean_nll": 0.48749486137838927,
+      "ppl": 1.628232159255052
+    },
+    "math.general_reasoning": {
+      "examples": 8,
+      "answer_tokens": 1185,
+      "mean_nll": 1.1349138348414425,
+      "ppl": 3.1109054796925233
+    },
+    "math.money": {
+      "examples": 8,
+      "answer_tokens": 1033,
+      "mean_nll": 1.1727068329595989,
+      "ppl": 3.230725848736359
+    },
+    "math.rate_time": {
+      "examples": 8,
+      "answer_tokens": 996,
+      "mean_nll": 0.9039299746593797,
+      "ppl": 2.4692883078793626
+    },
+    "math.ratio_percent": {
+      "examples": 8,
+      "answer_tokens": 1018,
+      "mean_nll": 1.0396241336065566,
+      "ppl": 2.8281538065806586
+    }
+  },
+  "timing_seconds": {
+    "probe_seconds": 91.82707280432805,
+    "utility_seconds": 0.06521810870617628,
+    "train_seconds": 1595.2600064328872,
+    "round_seconds": 1687.8346681031398,
+    "checkpoint_seconds": 0.6037516822107136,
+    "selector_total": 91.89229091303423,
+    "training_wall": 1687.8348343251273,
+    "final_probe_excluded_from_overhead": 4.174981725867838
+  },
+  "selector_overhead_ratio": 0.05444388813658827,
+  "peak_gpu_memory_bytes": 9860563968,
+  "selector_log_sha256": "0f68754a05baebd384ae67d697e1ac60e795882e20ef821bc86d48600a01c6ea",
+  "train_log_sha256": "381dcbbd37be4b75ac07b29218bc765e6ed0cf212c3ef180409acbebd33d1f40",
+  "interpretation_warning": "Positive forgetting raises replay priority. Coverage guard and replay hysteresis restrict the candidate set / replay timing only; utility weights are never modified online."
+}

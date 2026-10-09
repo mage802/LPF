@@ -1,0 +1,10 @@
+{
+  "run_dir": "/root/autodl-tmp/campus_week8_9_starter/saves/week8/random_sameloop_seed20250723",
+  "target_full_tokens": 1500000,
+  "trained_full_tokens": 1499980,
+  "budget_utilization": 0.9999866666666667,
+  "overshoot_tokens": 0,
+  "termination_reason": "token_budget_exact",
+  "partial_final_update": true,
+  "pass": true
+}

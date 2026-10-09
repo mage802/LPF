@@ -1,0 +1,13 @@
+{
+  "run_dir": "/root/autodl-tmp/campus_week8_9_starter/saves/week8/lp_match_replay_seed20250724",
+  "n_updates": 800,
+  "n_partial": 5,
+  "update_token_target": 2048,
+  "update_token_tolerance": 0.2,
+  "ratio_min": 0.38427734375,
+  "ratio_max": 1.1943359375,
+  "final_cumulative_tokens": 1499977,
+  "budget_utilization": 0.9999846666666666,
+  "violations": [],
+  "pass": true
+}

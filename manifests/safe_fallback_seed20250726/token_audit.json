@@ -1,0 +1,11 @@
+{
+ "run_dir": "/root/autodl-tmp/campus_project/runs/week11/safe_fallback_seed20250726",
+ "target_full_tokens": 1500000,
+ "trained_full_tokens": 1499971,
+ "budget_utilization": 0.9999806666666666,
+ "overshoot_tokens": 0,
+ "termination_reason": "token_budget_exact",
+ "partial_final_update": true,
+ "pass": true,
+ "reconstruction_note": "reconstructed from raw run logs by campus_project/make_week11_audit_jsons.py; values derived from train_log/stdout/coverage_guard_audit.py, no content altered"
+}

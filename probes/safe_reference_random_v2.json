@@ -1,0 +1,133 @@
+{
+  "schema_version": "safe_reference_v1",
+  "source_method": "random_sameloop",
+  "run_dirs": [
+    "/root/autodl-tmp/campus_week8_9_starter/saves/week8/random_sameloop_seed20250722",
+    "/root/autodl-tmp/campus_week8_9_starter/saves/week8/random_sameloop_seed20250723",
+    "/root/autodl-tmp/campus_week8_9_starter/saves/week8/random_sameloop_seed20250724"
+  ],
+  "burn_in_rounds": 1,
+  "z_value": 1.96,
+  "reference_by_skill": {
+    "code.algorithms": {
+      "n": 244,
+      "mean_learning_progress": -0.03175221971547045,
+      "sd_learning_progress": 0.0755832983169094,
+      "standard_error": 0.004838724845767193,
+      "lower_bound": -0.04123612041317415
+    },
+    "code.data_structures": {
+      "n": 244,
+      "mean_learning_progress": 0.008639069899023527,
+      "sd_learning_progress": 0.08592582874116815,
+      "standard_error": 0.005500837508833765,
+      "lower_bound": -0.0021425716182906524
+    },
+    "code.debug_testing": {
+      "n": 244,
+      "mean_learning_progress": -0.02807170569183524,
+      "sd_learning_progress": 0.05063840611735425,
+      "standard_error": 0.003241791762020456,
+      "lower_bound": -0.03442561754539533
+    },
+    "code.general_programming": {
+      "n": 244,
+      "mean_learning_progress": 0.0627933258535493,
+      "sd_learning_progress": 0.04734876613870948,
+      "standard_error": 0.0030311941425363582,
+      "lower_bound": 0.05685218533417803
+    },
+    "code.io_files": {
+      "n": 244,
+      "mean_learning_progress": 0.16210490721630005,
+      "sd_learning_progress": 0.09757638423539201,
+      "standard_error": 0.006246687896316505,
+      "lower_bound": 0.1498613989395197
+    },
+    "code.web_frontend": {
+      "n": 244,
+      "mean_learning_progress": 0.04636211677980456,
+      "sd_learning_progress": 0.03219363471304704,
+      "standard_error": 0.0020609862711789577,
+      "lower_bound": 0.04232258368829381
+    },
+    "general.classification": {
+      "n": 244,
+      "mean_learning_progress": 0.013253605870269058,
+      "sd_learning_progress": 0.0511575171865329,
+      "standard_error": 0.003275024442838588,
+      "lower_bound": 0.006834557962305426
+    },
+    "general.explanation": {
+      "n": 244,
+      "mean_learning_progress": 0.02144650873102562,
+      "sd_learning_progress": 0.02313124545444833,
+      "standard_error": 0.0014808262484747735,
+      "lower_bound": 0.018544089284015065
+    },
+    "general.extraction": {
+      "n": 244,
+      "mean_learning_progress": 0.027784210457117226,
+      "sd_learning_progress": 0.03021576724047291,
+      "standard_error": 0.0019343662811243808,
+      "lower_bound": 0.02399285254611344
+    },
+    "general.question_answering": {
+      "n": 244,
+      "mean_learning_progress": 0.03255681554515298,
+      "sd_learning_progress": 0.03169793505297054,
+      "standard_error": 0.002029252352248962,
+      "lower_bound": 0.028579480934745015
+    },
+    "general.summarization": {
+      "n": 244,
+      "mean_learning_progress": 0.05596569329658205,
+      "sd_learning_progress": 0.06258097872633304,
+      "standard_error": 0.004006336629633311,
+      "lower_bound": 0.04811327350250076
+    },
+    "general.writing_generation": {
+      "n": 244,
+      "mean_learning_progress": 0.0041581019447804665,
+      "sd_learning_progress": 0.02012791765904699,
+      "standard_error": 0.001288557888305308,
+      "lower_bound": 0.0016325284837020626
+    },
+    "math.counting_geometry": {
+      "n": 244,
+      "mean_learning_progress": 0.15494819957923756,
+      "sd_learning_progress": 0.10422441335590983,
+      "standard_error": 0.006672284349463574,
+      "lower_bound": 0.14187052225428895
+    },
+    "math.general_reasoning": {
+      "n": 244,
+      "mean_learning_progress": 0.08384369765792175,
+      "sd_learning_progress": 0.10641975008398245,
+      "standard_error": 0.006812826381995829,
+      "lower_bound": 0.07049055794920993
+    },
+    "math.money": {
+      "n": 244,
+      "mean_learning_progress": 0.09938527587573737,
+      "sd_learning_progress": 0.09760133327119205,
+      "standard_error": 0.006248285094667091,
+      "lower_bound": 0.08713863709018987
+    },
+    "math.rate_time": {
+      "n": 244,
+      "mean_learning_progress": 0.09049929265019271,
+      "sd_learning_progress": 0.09253837238905878,
+      "standard_error": 0.005924162237381768,
+      "lower_bound": 0.07888793466492444
+    },
+    "math.ratio_percent": {
+      "n": 244,
+      "mean_learning_progress": 0.1018360444358369,
+      "sd_learning_progress": 0.10048984796998899,
+      "standard_error": 0.006433203299504225,
+      "lower_bound": 0.08922696596880861
+    }
+  },
+  "frozen_rule": "candidate skill must clear lower_bound + margin for confirm_rounds consecutive probes; otherwise Random fallback"
+}

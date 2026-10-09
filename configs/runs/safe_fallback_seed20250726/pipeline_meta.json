@@ -1,0 +1,27 @@
+{
+  "schema_version": "training_launcher_v1",
+  "created_at_utc": "2026-09-21T16:13:08.746661+00:00",
+  "seed": 20250726,
+  "project_root": "/root/autodl-tmp/campus_project",
+  "trainer": "/root/autodl-tmp/campus_project/code_adapted/week10_11/scripts/train_lpf_v2.py",
+  "trainer_sha256": "0747b864f79b763762b5d146ab0cbf771a167a393e09e37d21f5e7844409a8f1",
+  "config": "/root/autodl-tmp/campus_week10_11_starter/configs/week11_safe_curriculum.yaml",
+  "config_sha256": "fdb45035fa43072789c7ce15bfd3ebbe510675f375d653398d4cd69026c2c2dd",
+  "command": [
+    "/root/autodl-tmp/campus_project/.venv/bin/python",
+    "/root/autodl-tmp/campus_project/code_adapted/week10_11/scripts/train_lpf_v2.py",
+    "--config",
+    "/root/autodl-tmp/campus_week10_11_starter/configs/week11_safe_curriculum.yaml",
+    "--seed",
+    "20250726",
+    "--output-dir",
+    "/root/autodl-tmp/campus_project/runs/week11/safe_fallback_seed20250726"
+  ],
+  "command_shell": "/root/autodl-tmp/campus_project/.venv/bin/python /root/autodl-tmp/campus_project/code_adapted/week10_11/scripts/train_lpf_v2.py --config /root/autodl-tmp/campus_week10_11_starter/configs/week11_safe_curriculum.yaml --seed 20250726 --output-dir /root/autodl-tmp/campus_project/runs/week11/safe_fallback_seed20250726",
+  "cwd": "/root/autodl-tmp/campus_project",
+  "environment": {
+    "CUDA_VISIBLE_DEVICES": null,
+    "CAMPUS_WEEK23_SCRIPTS": null,
+    "PYTHONPATH": "/root/autodl-tmp/campus_week10_11_starter/scripts:/root/autodl-tmp/campus_week4_5_starter/scripts:/root/autodl-tmp/campus_week10_11_starter/scripts:/root/autodl-tmp/campus_project/code_adapted/scripts:"
+  }
+}

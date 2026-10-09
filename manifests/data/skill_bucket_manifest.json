@@ -1,0 +1,113 @@
+{
+  "created_at_utc": "2026-08-01T10:54:16.168764+00:00",
+  "tagged_train": "/root/autodl-tmp/campus_week2_3_starter/data/week3/train_tagged.jsonl",
+  "tagged_train_sha256": "f7df8fd7b860da44c3906f96a69d4fd033f6f053fef90cdfe0f3392b23a8132b",
+  "scored_train": "/root/autodl-tmp/campus_week2_3_starter/data/week2/train_scored.jsonl",
+  "scored_train_sha256": "76180083b87bdfc1abd35f32d92746835745fcbd4c090bc639debc433f87480b",
+  "output": "/root/autodl-tmp/campus_week4_5_starter/data/week4/train_skill_buckets.jsonl",
+  "output_sha256": "0896b165a795c52549e2cfe6f9462a3f0417e242fb319ae3c0ad535f177d287e",
+  "difficulty_metric": "base_answer_nll",
+  "bucket_names": [
+    "easy",
+    "medium",
+    "hard"
+  ],
+  "assignment": "equal-frequency quantiles within each primary skill",
+  "samples": 8100,
+  "skills": 18,
+  "arms": 54,
+  "arm_counts": {
+    "code.algorithms::easy": 27,
+    "code.algorithms::hard": 27,
+    "code.algorithms::medium": 28,
+    "code.data_structures::easy": 269,
+    "code.data_structures::hard": 269,
+    "code.data_structures::medium": 270,
+    "code.debug_testing::easy": 20,
+    "code.debug_testing::hard": 20,
+    "code.debug_testing::medium": 20,
+    "code.general_programming::easy": 391,
+    "code.general_programming::hard": 391,
+    "code.general_programming::medium": 390,
+    "code.io_files::easy": 24,
+    "code.io_files::hard": 24,
+    "code.io_files::medium": 24,
+    "code.web_frontend::easy": 164,
+    "code.web_frontend::hard": 164,
+    "code.web_frontend::medium": 163,
+    "general.classification::easy": 38,
+    "general.classification::hard": 38,
+    "general.classification::medium": 37,
+    "general.explanation::easy": 83,
+    "general.explanation::hard": 83,
+    "general.explanation::medium": 82,
+    "general.extraction::easy": 85,
+    "general.extraction::hard": 85,
+    "general.extraction::medium": 84,
+    "general.question_answering::easy": 633,
+    "general.question_answering::hard": 633,
+    "general.question_answering::medium": 633,
+    "general.summarization::easy": 16,
+    "general.summarization::hard": 16,
+    "general.summarization::medium": 17,
+    "general.writing_generation::easy": 53,
+    "general.writing_generation::hard": 53,
+    "general.writing_generation::medium": 53,
+    "math.algebra::easy": 3,
+    "math.algebra::hard": 3,
+    "math.algebra::medium": 3,
+    "math.counting_geometry::easy": 16,
+    "math.counting_geometry::hard": 16,
+    "math.counting_geometry::medium": 16,
+    "math.general_reasoning::easy": 363,
+    "math.general_reasoning::hard": 363,
+    "math.general_reasoning::medium": 362,
+    "math.money::easy": 179,
+    "math.money::hard": 179,
+    "math.money::medium": 179,
+    "math.rate_time::easy": 210,
+    "math.rate_time::hard": 210,
+    "math.rate_time::medium": 211,
+    "math.ratio_percent::easy": 127,
+    "math.ratio_percent::hard": 127,
+    "math.ratio_percent::medium": 126
+  },
+  "small_arm_warnings": [
+    {
+      "arm": "general.summarization::easy",
+      "samples": 16
+    },
+    {
+      "arm": "general.summarization::hard",
+      "samples": 16
+    },
+    {
+      "arm": "general.summarization::medium",
+      "samples": 17
+    },
+    {
+      "arm": "math.algebra::easy",
+      "samples": 3
+    },
+    {
+      "arm": "math.algebra::hard",
+      "samples": 3
+    },
+    {
+      "arm": "math.algebra::medium",
+      "samples": 3
+    },
+    {
+      "arm": "math.counting_geometry::easy",
+      "samples": 16
+    },
+    {
+      "arm": "math.counting_geometry::hard",
+      "samples": 16
+    },
+    {
+      "arm": "math.counting_geometry::medium",
+      "samples": 16
+    }
+  ]
+}

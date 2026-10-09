@@ -1,0 +1,23 @@
+{
+  "created_at_utc": "2026-07-28T12:27:22.830638+00:00",
+  "input": "/root/autodl-tmp/data/week1/train.jsonl",
+  "input_sha256": "72ab2d2b85323286719ee3ad64db013df171cb3c6129a57115b6f28efa8fa117",
+  "output": "/root/autodl-tmp/campus_week2_3_starter/data/week2/train_scored.jsonl",
+  "output_sha256": "76180083b87bdfc1abd35f32d92746835745fcbd4c090bc639debc433f87480b",
+  "model_name": "Qwen/Qwen2.5-0.5B-Instruct",
+  "model_revision_requested": "main",
+  "model_revision_loaded": "7ae557604adf67be50417f59c2c2f167def9a775",
+  "adapter_path": null,
+  "device": "cuda",
+  "dtype": "torch.bfloat16",
+  "max_length": 1024,
+  "mtld_threshold": 0.72,
+  "loss_scope": "assistant tokens only",
+  "samples": 8100,
+  "domains": {
+    "math": 2693,
+    "code": 2685,
+    "general": 2722
+  },
+  "non_finite_nll": 0
+}

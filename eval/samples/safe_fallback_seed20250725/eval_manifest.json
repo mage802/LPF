@@ -1,0 +1,9 @@
+{
+  "schema_version": "eval_manifest_reconstructed_v1",
+  "reconstruction_note": "lm_eval 0.4.8 输出位于 eval_artifacts/<model_args_sanitized>/；本文件仅登记真实文件位置，未改动任何内容",
+  "results_file": "/root/autodl-tmp/campus_project/runs/week11/safe_fallback_seed20250725/eval_artifacts/__root__autodl-tmp__campus_project__runs__week11__safe_fallback_seed20250725/results_2026-09-22T02-02-54.848175.json",
+  "samples_files": [
+    "/root/autodl-tmp/campus_project/runs/week11/safe_fallback_seed20250725/eval_artifacts/__root__autodl-tmp__campus_project__runs__week11__safe_fallback_seed20250725/samples_gsm8k_2026-09-22T02-02-54.848175.jsonl",
+    "/root/autodl-tmp/campus_project/runs/week11/safe_fallback_seed20250725/eval_artifacts/__root__autodl-tmp__campus_project__runs__week11__safe_fallback_seed20250725/samples_ifeval_2026-09-22T02-02-54.848175.jsonl"
+  ]
+}

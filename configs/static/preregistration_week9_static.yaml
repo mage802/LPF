@@ -1,0 +1,71 @@
+# preregistration_week9_static.yaml — Week 9 增补登记：前向/反向静态课程臂
+#
+# 生效条件：本文件必须先于 gen_week9_static_configs.py 落盘 configs/
+# （生成器会拒绝在缺少本登记时写出任何配置 —— amendment-before-launch 硬性执行）。
+#
+# 范围：仅覆盖新增 6 条正式 run + 2 条 smoke。Week 8 冻结门、冻结超参、
+# 12 条已有 run 不受任何影响；saves/week8*、reports/week8* 不增不改。
+
+amendment_of: configs/preregistration_week8_9.yaml
+registered_at: "2026-08-15"
+phase: week9_static
+
+arms:
+  forward_static:
+    selector_mode: forward_static      # target_difficulty = token 进度 f
+    description: >-
+      平滑前向课表。utility = difficulty_match_weight * (-|bucket_center - f|)
+      + staleness_weight * staleness；f = seen_full_tokens / token_budget。
+  backward_static:
+    selector_mode: backward_static     # target_difficulty = 1 - f
+    description: >-
+      平滑反向课表。同一时钟，方向相反；其余与前向完全一致。
+
+design_decisions:
+  schedule: smooth_moving_target
+    # 理由：无分段数旋钮、无相位边界；与候选的 match 项同构，
+    # 使 forward/backward vs lp_match_replay 只差"固定时钟 vs 实测能力"一个因素。
+  replay_enabled: true
+    # 事实依据（2026-08-15 核实）：Week 8 四个方法 replay_enabled 全为 true。
+    # 静态臂与 random_sameloop 对照只差排序信号 -> replay 必须同为开。
+  replay_hysteresis_enabled: false     # 走对照组同款旧版单阈值路径
+  coverage_guard_enabled: false        # 静态调度定义上不纠偏；域漂移照实测量、描述性报告
+  epsilon_exploration: 0.0             # 纯静态，不掺探索噪声
+  gradient_conflict_enabled: false     # 与 Week 8 全部 run 一致（§4.4 已移除）
+  probes: keep_interval_1
+    # probe_interval_rounds=1 与其他 v2 run 同循环；probe 只喂状态/日志，
+    # 静态 utility 不读 probe 输出（由单测"状态无关性"锁定）。
+  parent_config: week7 a2_lp_only_seed20250719 manifest（与 Week 8 同一父配置）
+  protocol_family: token_update_matched_v2   # 7 个协议字段与 Week 8 逐值一致
+
+seeds: [20250722, 20250723, 20250724]    # 与 Week 8 相同
+token_budget: 1500000
+smoke_budget: 200000
+
+gates: none
+  # 基线刻画研究：不设通过/失败门，不做非劣效判定。
+  # 只报告效应量与置信区间，不使用"显著/不显著"表述。
+
+sanity_checks:
+  # 这些不是科学门，是实现 bug 检测器；失败 = 代码错误，不是结论。
+  schedule_clock_exact: true           # 每轮 logged target_difficulty 必须等于 f（前向）/ 1-f（反向），偏差 < 1e-9
+  schedule_fidelity_spearman: 0.9      # 正式 run：所选臂 bucket_center vs 进度，前向 ρ>0.9 / 反向 ρ<-0.9
+  budget_utilization_min: 0.9996
+  overshoot_tokens: 0
+  termination_reason: token_budget_exact
+
+analysis_plan:
+  primary_comparisons:
+    - forward_static - random_sameloop
+    - backward_static - random_sameloop
+  secondary_comparisons:
+    - forward_static - backward_static
+    - lp_match_replay - forward_static
+    - lp_match_replay - backward_static
+  metric: gsm8k_strict
+  method: 配对 bootstrap（B=10000, rng=20250814, doc_id 种子内配对再跨种子平均）, 报告点估计 + 95% CI
+  descriptives:
+    - final_domain_deviation（unguarded drift，接 Week 8 发现）
+    - replay_fraction / selector_overhead_ratio / budget_utilization
+    - 分桶 token 配额 vs 平滑课表理想值
+  provenance: 全部数字出自 reports/week9/preregistration_week9_static.json 登记的 run；Week 8 对照数字出自已冻结的 reports/week8/。

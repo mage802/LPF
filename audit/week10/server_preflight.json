@@ -1,0 +1,64 @@
+{
+  "schema_version": "server_preflight_v1",
+  "project_root": "/root/autodl-tmp/campus_project",
+  "trainer": "/root/autodl-tmp/campus_week4_5_starter/scripts/train_lpf.py",
+  "trainer_sha256": "80974f5730fd7b6e465f931622395b6b47799b7792765b9dc9b62db4c244e19c",
+  "config": "/root/autodl-tmp/campus_week10_11_starter/configs/week11_safe_curriculum.yaml",
+  "config_sha256": "38641b8286ee0f7890953d02f4d8b2e2992956d74f3c9a41418cff3b1841a792",
+  "python": "/root/autodl-tmp/campus_project/.venv/bin/python",
+  "platform": "Linux-5.15.0-112-generic-x86_64-with-glibc2.35",
+  "checks": {
+    "exists_project_root": true,
+    "exists_trainer": true,
+    "exists_config": true,
+    "exists_train_file": true,
+    "exists_probe_file": true,
+    "trainer_help_exit": true,
+    "config_entry": {
+      "source": true,
+      "help": true
+    },
+    "seed_override": {
+      "source": true,
+      "help": true
+    },
+    "output_override": {
+      "source": true,
+      "help": true
+    },
+    "token_budget_override": {
+      "source": true,
+      "help": true
+    },
+    "update_token_target": {
+      "source": false,
+      "help": false
+    },
+    "token_ratio_logging": {
+      "source": false,
+      "help": false
+    },
+    "token_normalized_gradient": {
+      "source": false,
+      "help": false
+    },
+    "strict_budget": {
+      "source": true,
+      "help": false
+    },
+    "safe_contract": false,
+    "config_has_protocol_family": true,
+    "config_has_token_budget": true,
+    "config_has_update_token_target": true,
+    "config_has_safe_reference_file": true,
+    "python_environment": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]\ntorch=2.6.0+cu124\ncuda=True\ndevice_count=1\n"
+  },
+  "errors": [
+    "trainer_source_missing:update_token_target",
+    "trainer_source_missing:update_token_ratio",
+    "trainer_source_missing:token_normalized_gradient",
+    "safe_fallback_contract_missing"
+  ],
+  "warnings": [],
+  "status": "fail"
+}

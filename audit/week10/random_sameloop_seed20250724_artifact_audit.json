@@ -1,0 +1,35 @@
+{
+  "schema_version": "run_artifact_audit_v1",
+  "run_dir": "/root/autodl-tmp/campus_week8_9_starter/saves/week8/random_sameloop_seed20250724",
+  "required_files": [
+    "config.yaml",
+    "command.txt",
+    "run_manifest.json",
+    "train_log.jsonl",
+    "selector_log.jsonl",
+    "eval_manifest.json",
+    "eval_results.json",
+    "token_audit.json",
+    "update_token_audit.json",
+    "coverage_audit.json",
+    "sha256.txt"
+  ],
+  "missing_files": [],
+  "hashes": {
+    "config.yaml": "bb578cd0601fde60a522f4e30029a4bddbca3f4487c3143731025ce60a2bd273",
+    "command.txt": "a84faa2a8a1b56f1aa8cc798cda3bdbbaa404362e331e7a337a7536c969082c9",
+    "run_manifest.json": "f241ed919906beed907d4c5103bdb7ebdb2c622a0f892eb6e6d48db9c4c4c989",
+    "train_log.jsonl": "a46b0033d9b1ea439b6ab63b9d8c155a2fb37065defb7d086bb3b525ae7856a1",
+    "lpf_selector_log.jsonl": "72270b8c495489003748c15bf6591d6330f98b2cf8a383e6bbfc262e60f510ab",
+    "eval_manifest.json": "2e50e768a127a5f970fd40a452add448100b84f9434e79ba81895ee4f4d7f1a5",
+    "eval_results.json": "e7dc64031830b847eb4120c9269c0c0a3a61b94b660b7e0da57748e3c0c98df8",
+    "token_audit.json": "7c3bf2de5fa9ee5b2686219d5cb29895b7a6834aad68441a37b777a14c89f7da",
+    "update_token_audit.json": "1507442053d8b57c69d653ff2e960fae47297e5dabc068601f5dfc4b673e035f",
+    "coverage_audit.json": "0edd1549192de78fffd6e178fb741a8a182db78e332c53887fbf59f6605646be"
+  },
+  "warnings": [
+    "selector_log_alias:lpf_selector_log.jsonl"
+  ],
+  "audit_reasons": [],
+  "audit_status": "warn"
+}

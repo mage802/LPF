@@ -1,0 +1,78 @@
+{
+  "schema_version": "run_aggregate_v1",
+  "metric_key": "exact_match,strict-match",
+  "records": [
+    {
+      "run_dir": "/root/autodl-tmp/campus_week8_9_starter/saves/week8/lp_match_replay_seed20250722",
+      "run_id": "lp_match_replay_seed20250722",
+      "method": "LPF-Curriculum",
+      "seed": "20250722",
+      "metric": 0.24715693707354056,
+      "protocol_family": "token_update_matched_v2",
+      "target_full_tokens": 1500000
+    },
+    {
+      "run_dir": "/root/autodl-tmp/campus_week8_9_starter/saves/week8/lp_match_replay_seed20250723",
+      "run_id": "lp_match_replay_seed20250723",
+      "method": "LPF-Curriculum",
+      "seed": "20250723",
+      "metric": 0.21304018195602728,
+      "protocol_family": "token_update_matched_v2",
+      "target_full_tokens": 1500000
+    },
+    {
+      "run_dir": "/root/autodl-tmp/campus_week8_9_starter/saves/week8/lp_match_replay_seed20250724",
+      "run_id": "lp_match_replay_seed20250724",
+      "method": "LPF-Curriculum",
+      "seed": "20250724",
+      "metric": 0.265352539802881,
+      "protocol_family": "token_update_matched_v2",
+      "target_full_tokens": 1500000
+    },
+    {
+      "run_dir": "/root/autodl-tmp/campus_week8_9_starter/saves/week8/random_sameloop_seed20250722",
+      "run_id": "random_sameloop_seed20250722",
+      "method": "LPF-Curriculum",
+      "seed": "20250722",
+      "metric": 0.26383623957543595,
+      "protocol_family": "token_update_matched_v2",
+      "target_full_tokens": 1500000
+    },
+    {
+      "run_dir": "/root/autodl-tmp/campus_week8_9_starter/saves/week8/random_sameloop_seed20250723",
+      "run_id": "random_sameloop_seed20250723",
+      "method": "LPF-Curriculum",
+      "seed": "20250723",
+      "metric": 0.2805155420773313,
+      "protocol_family": "token_update_matched_v2",
+      "target_full_tokens": 1500000
+    },
+    {
+      "run_dir": "/root/autodl-tmp/campus_week8_9_starter/saves/week8/random_sameloop_seed20250724",
+      "run_id": "random_sameloop_seed20250724",
+      "method": "LPF-Curriculum",
+      "seed": "20250724",
+      "metric": 0.29037149355572406,
+      "protocol_family": "token_update_matched_v2",
+      "target_full_tokens": 1500000
+    }
+  ],
+  "summaries": {
+    "LPF-Curriculum": {
+      "n": 6,
+      "mean": 0.26004548900682334,
+      "sd": 0.027411084854530213,
+      "seed_block_bootstrap_95ci": [
+        0.2385645691180187,
+        0.27849380844073796
+      ]
+    }
+  },
+  "comparison": {
+    "a": "lp_match_replay",
+    "b": "random_sameloop",
+    "paired_seeds": [],
+    "warning": "no common seeds"
+  },
+  "warnings": []
+}

@@ -1,0 +1,20 @@
+{
+  "campus_week1_train": {
+    "file_name": "week1/train.jsonl",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "campus_week1_validation": {
+    "file_name": "week1/validation.jsonl",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  }
+}

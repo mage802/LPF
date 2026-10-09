@@ -1,0 +1,26 @@
+{
+  "run_dir": "/root/autodl-tmp/campus_week8_9_starter/saves/week8/lp_match_replay_seed20250723",
+  "hysteresis_enabled": true,
+  "n_rounds": 82,
+  "replay_active_rounds": 79,
+  "capped_rounds": 0,
+  "replay_tokens_total": 250998,
+  "replay_fraction": 0.1673327808863108,
+  "max_replay_fraction": 0.2,
+  "transitions": [
+    {
+      "round": 3,
+      "transition": "off->on",
+      "forgetting": 0.11952333756296478
+    }
+  ],
+  "manifest_transitions": [
+    {
+      "round": 3,
+      "transition": "off->on",
+      "forgetting": 0.11952333756296478
+    }
+  ],
+  "violations": [],
+  "pass": true
+}

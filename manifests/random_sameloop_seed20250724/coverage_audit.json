@@ -1,0 +1,305 @@
+{
+  "run_dir": "/root/autodl-tmp/campus_week8_9_starter/saves/week8/random_sameloop_seed20250724",
+  "guard_enabled": false,
+  "window_tokens": 250000,
+  "n_windows": 6,
+  "domain_cumulative_fraction": {
+    "code": 0.2982644331123735,
+    "general": 0.4139246692102714,
+    "math": 0.28781089767735507
+  },
+  "domain_target_fraction": {
+    "code": 0.3314814814814815,
+    "general": 0.3360493827160494,
+    "math": 0.3324691358024691
+  },
+  "domain_deviation": {
+    "code": -0.03321704836910799,
+    "general": 0.07787528649422198,
+    "math": -0.04465823812511405
+  },
+  "max_abs_domain_deviation": 0.07787528649422198,
+  "domain_deviation_tolerance": 0.1,
+  "arms_with_two_empty_windows": {
+    "code.algorithms::easy": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "code.algorithms::hard": [
+      2
+    ],
+    "code.algorithms::medium": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "code.data_structures::hard": [
+      2,
+      5,
+      6
+    ],
+    "code.data_structures::medium": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "code.debug_testing::medium": [
+      2,
+      3,
+      6
+    ],
+    "code.general_programming::easy": [
+      2,
+      3,
+      4
+    ],
+    "code.io_files::easy": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "code.io_files::medium": [
+      2,
+      5,
+      6
+    ],
+    "code.web_frontend::hard": [
+      2,
+      3,
+      6
+    ],
+    "code.web_frontend::medium": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "general.classification::easy": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "general.classification::medium": [
+      2,
+      3,
+      6
+    ],
+    "general.explanation::hard": [
+      2,
+      3,
+      4
+    ],
+    "general.explanation::medium": [
+      2,
+      3,
+      6
+    ],
+    "general.extraction::hard": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "general.question_answering::medium": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "general.summarization::hard": [
+      2,
+      5,
+      6
+    ],
+    "general.writing_generation::easy": [
+      2,
+      3
+    ],
+    "general.writing_generation::medium": [
+      2,
+      3,
+      6
+    ],
+    "math.algebra::medium": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "math.counting_geometry::easy": [
+      2,
+      5
+    ],
+    "math.counting_geometry::hard": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "math.counting_geometry::medium": [
+      2,
+      5,
+      6
+    ],
+    "math.general_reasoning::easy": [
+      2
+    ],
+    "math.general_reasoning::hard": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "math.general_reasoning::medium": [
+      2,
+      3,
+      6
+    ],
+    "math.money::easy": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "math.money::hard": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "math.money::medium": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "math.rate_time::medium": [
+      2
+    ],
+    "math.ratio_percent::easy": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "math.ratio_percent::hard": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "math.ratio_percent::medium": [
+      2,
+      5
+    ],
+    "code.io_files::hard": [
+      3,
+      4
+    ],
+    "general.explanation::easy": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "general.extraction::easy": [
+      3,
+      4,
+      5
+    ],
+    "math.rate_time::easy": [
+      3,
+      4,
+      5
+    ],
+    "code.debug_testing::easy": [
+      4,
+      5,
+      6
+    ],
+    "code.debug_testing::hard": [
+      4,
+      5
+    ],
+    "general.extraction::medium": [
+      4
+    ],
+    "general.question_answering::easy": [
+      4,
+      5,
+      6
+    ],
+    "general.summarization::easy": [
+      4,
+      5,
+      6
+    ],
+    "general.writing_generation::hard": [
+      4,
+      5
+    ],
+    "math.algebra::hard": [
+      4,
+      5
+    ],
+    "code.data_structures::easy": [
+      5
+    ],
+    "code.web_frontend::easy": [
+      5,
+      6
+    ],
+    "general.summarization::medium": [
+      5,
+      6
+    ],
+    "code.general_programming::hard": [
+      6
+    ],
+    "math.rate_time::hard": [
+      6
+    ]
+  },
+  "arms_below_min_exposure": [
+    "code.algorithms::easy",
+    "code.algorithms::medium",
+    "code.data_structures::medium",
+    "code.web_frontend::medium",
+    "general.classification::easy",
+    "general.extraction::hard",
+    "general.question_answering::medium",
+    "math.algebra::medium",
+    "math.counting_geometry::hard",
+    "math.general_reasoning::hard",
+    "math.money::easy",
+    "math.money::hard",
+    "math.money::medium",
+    "math.ratio_percent::easy",
+    "math.ratio_percent::hard"
+  ],
+  "min_arm_exposure_fraction": 0.005,
+  "guard_action_counts": {},
+  "violations": [],
+  "pass": true
+}

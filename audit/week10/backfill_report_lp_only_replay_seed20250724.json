@@ -1,0 +1,30 @@
+{
+  "run": "lp_only_replay_seed20250724",
+  "actions": [
+    {
+      "item": "run_manifest.json",
+      "status": "present",
+      "detail": ""
+    },
+    {
+      "item": "eval_artifacts",
+      "status": "copied 3 files",
+      "detail": "/root/autodl-tmp/campus_week8_9_starter/results/week8/lp_only_replay_seed20250724"
+    },
+    {
+      "item": "config.yaml",
+      "status": "verified_by_hash",
+      "detail": "week8_lp_only_replay_seed20250724.yaml"
+    },
+    {
+      "item": "command.txt",
+      "status": "N/A_not_recorded",
+      "detail": ""
+    },
+    {
+      "item": "sha256.txt",
+      "status": "generated",
+      "detail": "16 top-level files"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "run_dir": "/root/autodl-tmp/campus_week8_9_starter/saves/week8/lpf_sparse_seed20250724",
+  "n_updates": 851,
+  "n_partial": 6,
+  "update_token_target": 2048,
+  "update_token_tolerance": 0.2,
+  "ratio_min": 0.02294921875,
+  "ratio_max": 1.13134765625,
+  "final_cumulative_tokens": 1499990,
+  "budget_utilization": 0.9999933333333333,
+  "violations": [],
+  "pass": true
+}

@@ -1,0 +1,78 @@
+{
+  "schema_version": "config_inheritance_audit_v1",
+  "parent": "/root/autodl-tmp/campus_project/reports/week10/week8_lp_only_replay.canonical.yaml",
+  "candidate": "/root/autodl-tmp/campus_week10_11_starter/configs/week11_safe_curriculum.yaml",
+  "allowed_fields": [
+    "coverage_guard_enabled",
+    "output_dir",
+    "run_role",
+    "safe_candidate_mode",
+    "safe_confirm_rounds",
+    "safe_fail_cooldown_rounds",
+    "safe_progress_margin",
+    "safe_reference_file",
+    "schema_version",
+    "seed",
+    "selector_mode",
+    "study_title"
+  ],
+  "changed_fields": {
+    "output_dir": {
+      "parent": "saves/week8/lp_only_replay_seed20250722",
+      "candidate": "saves/week11/safe_fallback_seed20250725",
+      "allowed": true
+    },
+    "run_role": {
+      "parent": null,
+      "candidate": "P1_safe_fallback_confirmation",
+      "allowed": true
+    },
+    "safe_candidate_mode": {
+      "parent": null,
+      "candidate": "lp_only",
+      "allowed": true
+    },
+    "safe_confirm_rounds": {
+      "parent": null,
+      "candidate": 2,
+      "allowed": true
+    },
+    "safe_fail_cooldown_rounds": {
+      "parent": null,
+      "candidate": 2,
+      "allowed": true
+    },
+    "safe_progress_margin": {
+      "parent": null,
+      "candidate": 0.0,
+      "allowed": true
+    },
+    "safe_reference_file": {
+      "parent": null,
+      "candidate": "reports/week10/safe_reference_random_v2.json",
+      "allowed": true
+    },
+    "schema_version": {
+      "parent": null,
+      "candidate": "week11_safe_curriculum_v1",
+      "allowed": true
+    },
+    "seed": {
+      "parent": 20250722,
+      "candidate": 20250725,
+      "allowed": true
+    },
+    "selector_mode": {
+      "parent": "lp_only",
+      "candidate": "safe_fallback",
+      "allowed": true
+    },
+    "study_title": {
+      "parent": null,
+      "candidate": "When Competence-Aware Curriculum Fails: strict token/update auditing of CAMPUS scheduling and low-cost diagnosis",
+      "allowed": true
+    }
+  },
+  "unexpected_changes": [],
+  "audit_status": "pass"
+}

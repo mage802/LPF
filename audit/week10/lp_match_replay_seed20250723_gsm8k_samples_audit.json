@@ -1,0 +1,12 @@
+{
+  "schema_version": "eval_samples_audit_v1",
+  "sample_count": 2638,
+  "format_failure_count": 2638,
+  "format_failure_rate": 1.0,
+  "numeric_parseable_count": 2622,
+  "flexible_match_count": 563,
+  "strict_match_count": 0,
+  "missing_marker_count": 2638,
+  "empty_response_count": 0,
+  "audit_status": "warn"
+}
